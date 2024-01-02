@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240102021025"
+  },
+  "applications": "*",
+  "entityTableName": "team_plan",
+  "fields": [
+    {
+      "fieldName": "availability",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "TeamPlan",
+  "relationships": [
+    {
+      "otherEntityField": "key",
+      "otherEntityName": "team",
+      "relationshipName": "team",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "key",
+      "otherEntityName": "shift",
+      "relationshipName": "shift",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}
